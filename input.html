@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Data Sales</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Input Data Sales</h2>
+    <form onsubmit="return saveData(event)">
+      <input type="text" id="customer" placeholder="Nama Customer" required>
+      <input type="text" id="paket" placeholder="Paket" required>
+      <input type="number" id="harga" placeholder="Harga" required>
+      <input type="text" id="sales" placeholder="Sales" required>
+      <input type="text" id="area" placeholder="Area" required>
+      <input type="text" id="koordinator" placeholder="Koordinator" required>
+      <button type="submit">Simpan</button>
+    </form>
+    <div id="success" class="success"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
